@@ -1,6 +1,7 @@
 // 1. Create a new Vue instance with the necessary options: el, data and methods.
 // Attach the new Vue instance to the div with the ID of "app".
 // 2. Create the following properties on the data object: title, summary, thumbnail, alt, and votes.
+// 3. Use mustache syntax to display the vote count, title, and summary in the Vue template.
 const app = new Vue({
   el: '#app',
   data: {
@@ -18,8 +19,6 @@ const app = new Vue({
 
   }
 });
-
-// 3. Use mustache syntax to display the vote count, title, and summary in the Vue template.
 
 // 4. Use v-bind to display the thumbnail image in the <img> tag.
 
