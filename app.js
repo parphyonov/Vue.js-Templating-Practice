@@ -12,16 +12,17 @@ const app = new Vue({
     //   For the thumbnail image, use a URl that links to your own photo or use this link to use a placeholder image:
     //   'https://placeimg.com/75/75/any'.
     thumbnail: 'https://placeimg.com/75/75/any',
-    alt: 'The Furry Gala Alt Text',
+    alt: 'Some Alt Text',
     //   The value of "votes" should be 0.
     votes: 0
   },
   methods: {
-
+    // 5. On the Vue instance, create a method called "increment" that adds 1 vote to the "votes" property
+    increment: function() {
+      this.votes += 1;
+    }
   }
 });
-
-// 5. On the Vue instance, create a method called "increment" that adds 1 vote to the "votes" property
 
 // 6. On the Vue instance, create a method called "decrement" that substracts 1 vote from the "votes" property
 
