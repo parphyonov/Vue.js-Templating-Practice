@@ -13,8 +13,10 @@
     <h1>Global Tech News</h1>
     <div class="post">
       <div id="voteCounter">
-        <span>+</span>
-        <span>-</span>
+        <!-- 7. On the #voteCounter span elements, use v-on directive to call the increment or decrement methods
+        // so that the vote count goes up and down each time the + or - symbols are clicked. -->
+        <span @click="increment">+</span>
+        <span @click="decrement">-</span>
         <p class="votes">Votes: {{ votes }}</p>
       </div>
       <div><img :src="thumbnail" :alt="alt"></div>
